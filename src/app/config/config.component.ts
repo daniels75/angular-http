@@ -21,7 +21,7 @@ export class ConfigComponent {
     this.headers = undefined;
   }
 
-  showConfig() {
+  showConfig_1() {
     this.configService.getConfig()
       .subscribe(
         (data: Config) => this.config = { ...data }, // success path
